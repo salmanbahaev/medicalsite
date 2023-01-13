@@ -1,0 +1,368 @@
+@import "nullstyle.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;900&family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+.wrapper {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.block1 {
+    background: url('../img/bg1.jpg')center/cover no-repeat;
+    font-family: 'Montserrat', sans-serif;
+
+    &__container {
+        margin: 0 auto;
+        padding-left: calc((100vw / 1920) * 101.33);
+        padding-right: calc((100vw / 1920) * 98);
+        padding-top: calc((100vw / 1920) * 20);
+    }
+
+    &__row {
+        margin-top: calc((100vw / 1920) * 124);
+        display: flex;
+        flex-direction: column;
+        max-width: 65%;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: calc((100vw / 1920) * 96);
+        line-height: calc((100vw / 1920) * 117);
+        background: linear-gradient(90deg, #BCF3FF 2.49%, #EBFBFF 100%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &__text {
+        margin-top: calc((100vw / 1920) * 70);
+        font-size: calc((100vw / 1920) * 48);
+        line-height: calc((100vw / 1920) * 59);
+        font-weight: 500;
+        color: #EDFCFF;
+        max-width: 80%;
+    }
+
+    &__btn {
+        display: block;
+        text-align: center;
+        max-width: calc((100vw / 1920) * 388);
+        font-size: calc((100vw / 1920) * 58);
+        margin-top: calc((100vw / 1920) * 70);
+        margin-bottom: calc((100vw / 1920) * 208);
+        color: #FFFFFF;
+        background: #30B9D8;
+        border-radius: calc((100vw / 1920) * 20);
+        padding-top: calc((100vw / 1920) * 20);
+        padding-bottom: calc((100vw / 1920) * 20);
+        padding-left: calc((100vw / 1920) * 40);
+        padding-right: calc((100vw / 1920) * 40);
+    }
+}
+
+.header {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: calc((100vw / 1920) * 32);
+
+
+    &__left {
+        color: rgba(245, 253, 255, 0.8);
+    }
+
+    &__right {
+        display: flex;
+        color: rgba(245, 253, 255, 0.8);
+    }
+
+    &__ru {
+        color: rgba(245, 253, 255, 0.8);
+    }
+
+    &__en {
+        color: rgba(245, 253, 255, 0.8);
+    }
+
+    &__slesh {}
+}
+
+.block2 {
+    font-family: 'Inter', sans-serif;
+
+    p {
+        font-size: calc((100vw / 1920) * 64);
+        line-height: calc((100vw / 1920) * 77);
+        font-weight: 500;
+        margin-top: calc((100vw / 1920) * 98);
+        margin-bottom: calc((100vw / 1920) * 139);
+        margin-left: calc((100vw / 1920) * 98);
+    }
+}
+
+
+
+.block3 {
+    background: url('../img/bg2.jpg')center 69%/cover no-repeat;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    border-radius: calc((100vw / 1920) * 50);
+
+    &__container {
+        margin: 0 auto;
+        padding-left: calc((100vw / 1920) * 88);
+        padding-right: calc((100vw / 1920) * 121);
+    }
+
+    &__PSA {
+        display: inline-block;
+        background: linear-gradient(180deg, #6BDAF2 0%, #D5F7FF 100%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 500;
+        font-size: calc((100vw / 1920) * 200);
+        line-height: calc((100vw / 1920) * 242);
+        position: absolute;
+        top: -18%;
+    }
+
+    &__row {
+        margin-top: calc((100vw / 1920) * 28);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__title {
+        margin-top: calc((100vw / 1920) * 28);
+        display: flex;
+        color: #0C3B45;
+        margin-bottom: calc((100vw / 1920) * 129);
+
+        img {
+            max-width: calc((100vw / 1920) * 80);
+            height: calc((100vw / 1920) * 76);
+            margin-right: calc((100vw / 1920) * 29);
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: calc((100vw / 1920) * 75);
+            line-height: calc((100vw / 1920) * 91);
+        }
+    }
+
+    &__image {}
+
+    &__list-kadrov {
+        margin-bottom: calc((100vw / 1920) * 34);
+        padding-top: calc((100vw / 1920) * 15);
+        padding-bottom: calc((100vw / 1920) * 15);
+        padding-right: calc((100vw / 1920) * 45);
+        padding-left: calc((100vw / 1920) * 45);
+        max-width: calc((100vw / 1920) * 796);
+        font-size: calc((100vw / 1920) * 48);
+        color: #0C3B45;
+        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(3px);
+        border-radius: calc((100vw / 1920) * 20);
+
+        h2 {
+            font-weight: 600;
+            line-height: calc((100vw / 1920) * 62.89);
+        }
+
+        p {
+            font-weight: 400;
+            line-height: calc((100vw / 1920) * 62.89);
+            max-width: 64%;
+        }
+    }
+}
+
+.block4 {
+    position: relative;
+    background: url('../img/bg3.jpg')center/cover no-repeat;
+    margin-top: calc((100vw / 1920) * 124);
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    border-radius: calc((100vw / 1920) * 50);
+
+    &__container {
+        margin: 0 auto;
+        padding-left: calc((100vw / 1920) * 88);
+        padding-right: calc((100vw / 1920) * 121);
+    }
+
+    &__PSA {
+        font-weight: 500;
+        font-size: calc((100vw / 1920) * 200);
+        line-height: calc((100vw / 1920) * 242);
+        background: linear-gradient(180deg, #6BDAF2 0%, #D5F7FF 100%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        position: absolute;
+        top: -18%;
+    }
+
+    &__row {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        align-self: center;
+        display: flex;
+        font-weight: 600;
+        font-size: calc((100vw / 1920) * 75);
+        line-height: calc((100vw / 1920) * 91);
+        transform: translateX(55%);
+        margin-top: calc((100vw / 1920) * 27);
+        margin-bottom: calc((100vw / 1920) * 156);
+
+        img {
+            max-width: calc((100vw / 1920) * 83);
+            margin-right: calc((100vw / 1920) * 25);
+        }
+    }
+
+    &__image {}
+
+    &__text {
+        align-self: flex-end;
+        max-width: calc((100vw / 1920) * 796);
+        font-weight: 500;
+        font-size: calc((100vw / 1920) * 48);
+        line-height: calc((100vw / 1920) * 58);
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(3px);
+        border-radius: calc((100vw / 1920) * 20);
+        padding-top: calc((100vw / 1920) * 15);
+        padding-bottom: calc((100vw / 1920) * 15);
+        padding-left: calc((100vw / 1920) * 30);
+        padding-right: calc((100vw / 1920) * 30);
+        margin-bottom: calc((100vw / 1920) * 96);
+    }
+}
+
+
+.block5 {
+    margin-top: calc((100vw / 1920) * 116);
+    background: url('../img/bg4.jpg')center/cover no-repeat;
+    color: #0C3B45;
+    font-family: 'Inter', sans-serif;
+    border-radius: calc((100vw / 1920) * 50);
+    position: relative;
+
+
+    &__container {
+        margin: 0 auto;
+        padding-left: calc((100vw / 1920) * 89);
+        padding-right: calc((100vw / 1920) * 90);
+    }
+
+    &__PSA {
+        font-weight: 500;
+        font-size: calc((100vw / 1920) * 200);
+        line-height: calc((100vw / 1920) * 242);
+        background: linear-gradient(180deg, #6BDAF2 0%, #D5F7FF 100%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        position: absolute;
+        top: -18%;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__title {
+        margin-top: calc((100vw / 1920) * 26);
+        display: flex;
+        font-weight: 600;
+        font-size: calc((100vw / 1920) * 75);
+        line-height: calc((100vw / 1920) * 91);
+        margin-bottom: calc((100vw / 1920) * 312);
+
+        img {
+            max-width: calc((100vw / 1920) * 62.74);
+            margin-right: calc((100vw / 1920) * 16.26);
+        }
+    }
+
+    &__text {
+        max-width: calc((100vw / 1920) * 813);
+        margin-bottom: calc((100vw / 1920) * 47);
+        font-weight: 400;
+        font-size: calc((100vw / 1920) * 48);
+        line-height: calc((100vw / 1920) * 58);
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(3px);
+        padding: calc((100vw / 1920) * 20) calc((100vw / 1920) * 40);
+        border-radius: calc((100vw / 1920) * 20);
+    }
+}
+
+
+.inputs {
+    background: url('../img/bg-input.jpg')center/cover no-repeat;
+    padding-top: calc((100vw / 1920) * 100);
+    font-family: 'Inter', sans-serif;
+    padding-bottom: calc((100vw / 1920) * 100);
+
+    &__block1 {
+        max-width: calc((100vw / 1920) * 1289);
+        margin: 0 auto;
+    }
+
+    &__container {
+        max-width: calc((100vw / 1920) * 1240);
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: calc((100vw / 1920) * 64);
+        line-height: calc((100vw / 1920) * 77);
+        color: #0C3B45;
+        letter-spacing: calc((100vw / 1920) * -3.2);
+        margin-bottom: calc((100vw / 1920) * 50);
+    }
+
+    &__name,
+    &__tel,
+    &__mail {
+        font-weight: 400;
+        font-size: calc((100vw / 1920) * 36);
+        line-height: calc((100vw / 1920) * 44);
+        width: 100%;
+        background: rgba(0, 0, 0, 0.05);
+        box-shadow: inset 5px 5px 5px rgba(12, 59, 69, 0.25);
+        backdrop-filter: blur(4px);
+        border-radius: calc((100vw / 1920) * 10);
+        height: calc((100vw / 1920) * 100);
+        padding: calc((100vw / 1920) * 28) calc((100vw / 1920) * 30);
+        margin-bottom: calc((100vw / 1920) * 20);
+
+        &:last-child {
+            margin-bottom: calc((100vw / 1920) * 50);
+        }
+    }
+
+    &__btn {
+        display: block;
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: calc((100vw / 1920) * 48);
+        line-height: calc((100vw / 1920) * 59);
+        padding: calc((100vw / 1920) * 20) calc((100vw / 1920) * 40);
+        background: #30B9D8;
+        border-radius: calc((100vw / 1920) * 20);
+        margin: 0 auto;
+    }
+}
