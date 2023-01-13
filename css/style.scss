@@ -82,8 +82,6 @@
     &__en {
         color: rgba(245, 253, 255, 0.8);
     }
-
-    &__slesh {}
 }
 
 .block2 {
@@ -151,8 +149,6 @@
         }
     }
 
-    &__image {}
-
     &__list-kadrov {
         margin-bottom: calc((100vw / 1920) * 34);
         padding-top: calc((100vw / 1920) * 15);
@@ -163,7 +159,7 @@
         font-size: calc((100vw / 1920) * 48);
         color: #0C3B45;
         background: rgba(255, 255, 255, 0.4);
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+        box-shadow: calc((100vw / 1920) * 3) calc((100vw / 1920) * 3) calc((100vw / 1920) * 6) rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(3px);
         border-radius: calc((100vw / 1920) * 20);
 
@@ -211,14 +207,19 @@
         flex-direction: column;
     }
 
+    &__content {
+        align-self: flex-end;
+        max-width: calc((100vw / 1920) * 796);
+        margin-right: calc((100vw / 1920) * 92);
+    }
+
     &__title {
         align-self: center;
         display: flex;
         font-weight: 600;
         font-size: calc((100vw / 1920) * 75);
         line-height: calc((100vw / 1920) * 91);
-        transform: translateX(55%);
-        margin-top: calc((100vw / 1920) * 27);
+        margin-top: calc((100vw / 1920) * 34);
         margin-bottom: calc((100vw / 1920) * 156);
 
         img {
@@ -227,16 +228,13 @@
         }
     }
 
-    &__image {}
-
     &__text {
-        align-self: flex-end;
-        max-width: calc((100vw / 1920) * 796);
+        max-width: calc((100vw / 1920) * 766);
         font-weight: 500;
         font-size: calc((100vw / 1920) * 48);
         line-height: calc((100vw / 1920) * 58);
         background: rgba(255, 255, 255, 0.3);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px calc((100vw / 1920) * 4) calc((100vw / 1920) * 4) rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(3px);
         border-radius: calc((100vw / 1920) * 20);
         padding-top: calc((100vw / 1920) * 15);
@@ -244,6 +242,10 @@
         padding-left: calc((100vw / 1920) * 30);
         padding-right: calc((100vw / 1920) * 30);
         margin-bottom: calc((100vw / 1920) * 96);
+    }
+
+    &__text400 {
+        font-weight: 400;
     }
 }
 
@@ -260,7 +262,7 @@
     &__container {
         margin: 0 auto;
         padding-left: calc((100vw / 1920) * 89);
-        padding-right: calc((100vw / 1920) * 90);
+        padding-right: calc((100vw / 1920) * 100);
     }
 
     &__PSA {
@@ -281,7 +283,7 @@
     }
 
     &__title {
-        margin-top: calc((100vw / 1920) * 26);
+        margin-top: calc((100vw / 1920) * 40);
         display: flex;
         font-weight: 600;
         font-size: calc((100vw / 1920) * 75);
@@ -301,7 +303,7 @@
         font-size: calc((100vw / 1920) * 48);
         line-height: calc((100vw / 1920) * 58);
         background: rgba(255, 255, 255, 0.3);
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+        box-shadow: calc((100vw / 1920) * 3) calc((100vw / 1920) * 3) calc((100vw / 1920) * 6) rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(3px);
         padding: calc((100vw / 1920) * 20) calc((100vw / 1920) * 40);
         border-radius: calc((100vw / 1920) * 20);
@@ -336,12 +338,13 @@
     &__name,
     &__tel,
     &__mail {
+        position: relative;
         font-weight: 400;
         font-size: calc((100vw / 1920) * 36);
         line-height: calc((100vw / 1920) * 44);
         width: 100%;
         background: rgba(0, 0, 0, 0.05);
-        box-shadow: inset 5px 5px 5px rgba(12, 59, 69, 0.25);
+        box-shadow: inset calc((100vw / 1920) * 5) calc((100vw / 1920) * 5) calc((100vw / 1920) * 5) rgba(12, 59, 69, 0.25);
         backdrop-filter: blur(4px);
         border-radius: calc((100vw / 1920) * 10);
         height: calc((100vw / 1920) * 100);

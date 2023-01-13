@@ -72,6 +72,7 @@
 .header__en {
   color: rgba(245, 253, 255, 0.8);
 }
+
 .block2 {
   font-family: "Inter", sans-serif;
 }
@@ -139,7 +140,7 @@
   font-size: 2.5vw;
   color: #0C3B45;
   background: rgba(255, 255, 255, 0.4);
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0.15625vw 0.15625vw 0.3125vw rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   border-radius: 1.0416666667vw;
@@ -183,14 +184,18 @@
   display: flex;
   flex-direction: column;
 }
+.block4__content {
+  align-self: flex-end;
+  max-width: 41.4583333333vw;
+  margin-right: 4.7916666667vw;
+}
 .block4__title {
   align-self: center;
   display: flex;
   font-weight: 600;
   font-size: 3.90625vw;
   line-height: 4.7395833333vw;
-  transform: translateX(55%);
-  margin-top: 1.40625vw;
+  margin-top: 1.7708333333vw;
   margin-bottom: 8.125vw;
 }
 .block4__title img {
@@ -198,13 +203,12 @@
   margin-right: 1.3020833333vw;
 }
 .block4__text {
-  align-self: flex-end;
-  max-width: 41.4583333333vw;
+  max-width: 39.8958333333vw;
   font-weight: 500;
   font-size: 2.5vw;
   line-height: 3.0208333333vw;
   background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0.2083333333vw 0.2083333333vw rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   border-radius: 1.0416666667vw;
@@ -213,6 +217,9 @@
   padding-left: 1.5625vw;
   padding-right: 1.5625vw;
   margin-bottom: 5vw;
+}
+.block4__text400 {
+  font-weight: 400;
 }
 
 .block5 {
@@ -226,7 +233,7 @@
 .block5__container {
   margin: 0 auto;
   padding-left: 4.6354166667vw;
-  padding-right: 4.6875vw;
+  padding-right: 5.2083333333vw;
 }
 .block5__PSA {
   font-weight: 500;
@@ -245,7 +252,7 @@
   align-items: flex-end;
 }
 .block5__title {
-  margin-top: 1.3541666667vw;
+  margin-top: 2.0833333333vw;
   display: flex;
   font-weight: 600;
   font-size: 3.90625vw;
@@ -263,7 +270,7 @@
   font-size: 2.5vw;
   line-height: 3.0208333333vw;
   background: rgba(255, 255, 255, 0.3);
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0.15625vw 0.15625vw 0.3125vw rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   padding: 1.0416666667vw 2.0833333333vw;
@@ -292,12 +299,13 @@
   margin-bottom: 2.6041666667vw;
 }
 .inputs__name, .inputs__tel, .inputs__mail {
+  position: relative;
   font-weight: 400;
   font-size: 1.875vw;
   line-height: 2.2916666667vw;
   width: 100%;
   background: rgba(0, 0, 0, 0.05);
-  box-shadow: inset 5px 5px 5px rgba(12, 59, 69, 0.25);
+  box-shadow: inset 0.2604166667vw 0.2604166667vw 0.2604166667vw rgba(12, 59, 69, 0.25);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   border-radius: 0.5208333333vw;
