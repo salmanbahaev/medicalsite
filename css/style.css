@@ -461,11 +461,14 @@
   margin-bottom: 1.3020833333vw;
   margin-top: 1.3020833333vw;
 }
+.footer__icons a {
+  display: inline-block;
+}
+.footer__icons a:last-child {
+  margin-left: 2.6041666667vw;
+}
 .footer__icons img {
   max-width: 3.125vw;
-}
-.footer__icons img:last-child {
-  margin-left: 2.6041666667vw;
 }
 .footer__privacy {
   font-weight: 400;
@@ -664,4 +667,4 @@
     top: 0.5208333333vw;
     left: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}

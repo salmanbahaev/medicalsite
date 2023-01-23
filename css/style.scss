@@ -496,12 +496,16 @@
         margin-bottom: calc((100vw / 1920) * 25);
         margin-top: calc((100vw / 1920) * 25);
 
-        img {
-            max-width: calc((100vw / 1920) * 60);
+        a {
+            display: inline-block;
 
             &:last-child {
                 margin-left: calc((100vw / 1920) * 50);
             }
+        }
+
+        img {
+            max-width: calc((100vw / 1920) * 60);
         }
     }
 
