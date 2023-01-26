@@ -7,40 +7,40 @@
 }
 
 .block1 {
-    background: url('../img/bg1.jpg')center/cover no-repeat;
+    background: url('../img/bg1.jpg')center/102% no-repeat;
     font-family: 'Montserrat', sans-serif;
 
     @media (max-width:480px) {
-        background: url('../img/bg-media1.jpg')center/cover no-repeat;
+        background: url('../img/bg-mobile.jpg')center/cover no-repeat;
     }
 
 
     &__container {
         margin: 0 auto;
-        padding-left: calc((100vw / 1920) * 101.33);
-        padding-right: calc((100vw / 1920) * 98);
-        padding-top: calc((100vw / 1920) * 20);
+        padding-left: calc((100vw / 1440) * 100);
+        padding-right: calc((100vw / 1440) * 87);
+        padding-top: calc((100vw / 1440) * 21);
     }
 
     &__row {
-        margin-top: calc((100vw / 1920) * 135);
+        margin-top: calc((100vw / 1440) * 135);
         display: flex;
         flex-direction: column;
         align-items: start;
-        max-width: 65%;
+        max-width: 85%;
 
         @media (max-width:480px) {
             margin: 100px auto 0;
             align-items: center;
             max-width: 100%;
-            margin-top: calc((100vw / 390) * 300);
+            margin-top: calc((100vw / 390) * 345);
         }
     }
 
     &__title {
         font-weight: 700;
-        font-size: calc((100vw / 1920) * 96);
-        line-height: calc((100vw / 1920) * 117);
+        font-size: calc((100vw / 1440) * 96);
+        line-height: calc((100vw / 1440) * 117);
         background: linear-gradient(90deg, #BCF3FF 2.49%, #EBFBFF 100%);
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -54,35 +54,41 @@
     }
 
     &__text {
-        margin-top: calc((100vw / 1920) * 70);
-        font-size: calc((100vw / 1920) * 48);
-        line-height: calc((100vw / 1920) * 59);
+        margin-top: calc((100vw / 1440) * 70);
+        font-size: calc((100vw / 1440) * 48);
+        line-height: calc((100vw / 1440) * 59);
         font-weight: 500;
         color: #EDFCFF;
-        max-width: 100%;
+        max-width: 85%;
+
 
         @media (max-width:480px) {
             text-align: center;
             max-width: 90%;
             line-height: 111.9%;
             font-size: calc((100vw / 390) * 18);
-            margin-top: calc((100vw / 390) * 70);
+            margin-top: calc((100vw / 390) * 80);
         }
     }
 
     &__btn {
+        font-weight: 500;
         display: block;
         text-align: center;
-        font-size: calc((100vw / 1920) * 58);
-        margin-top: calc((100vw / 1920) * 70);
+        font-size: calc((100vw / 1440) * 58);
+        line-height: calc((100vw / 1440) * 71);
+        margin-top: calc((100vw / 1440) * 70);
         color: #FFFFFF;
         background: #30B9D8;
-        border-radius: calc((100vw / 1920) * 20);
-        padding-top: calc((100vw / 1920) * 20);
-        padding-bottom: calc((100vw / 1920) * 20);
-        padding-left: calc((100vw / 1920) * 40);
-        padding-right: calc((100vw / 1920) * 40);
-        margin-bottom: calc((100vw / 1920) * 208);
+        border-radius: calc((100vw / 1440) * 20);
+        padding: calc((100vw / 1440) * 20) calc((100vw / 1440) * 40);
+        margin-bottom: calc((100vw / 1440) * 208);
+        box-shadow: 4px 4px 7px rgba(12, 59, 69, 0.25);
+
+        &:hover {
+            box-shadow: 0px 0px 20px #70E5FF, 4px 4px 7px rgba(12, 59, 69, 0.25);
+            font-weight: 600;
+        }
 
         @media (max-width: 480px) {
             margin-bottom: calc((100vw / 390) * 121);
@@ -98,12 +104,12 @@
     font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: space-between;
-    font-size: calc((100vw / 1920) * 32);
-    line-height: calc((100vw / 1920) * 32);
+    font-size: calc((100vw / 1440) * 32);
+    line-height: calc((100vw / 1440) * 39);
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
     width: 100%;
-    padding: calc((100vw / 1920) * 21) calc((100vw / 1920) * 98) calc((100vw / 1920) * 21) calc((100vw / 1920) * 108.33);
+    padding: calc((100vw / 1440) * 21) calc((100vw / 1440) * 98) calc((100vw / 1440) * 21) calc((100vw / 1440) * 108.33);
 
     @media (max-width:480px) {
         font-size: calc((100vw / 390) * 14);
@@ -133,10 +139,10 @@
     font-family: 'Inter', sans-serif;
 
     p {
-        font-size: calc((100vw / 1920) * 64);
-        line-height: calc((100vw / 1920) * 77);
+        font-size: calc((100vw / 1440) * 64);
+        line-height: calc((100vw / 1440) * 77);
         font-weight: 500;
-        margin: calc((100vw / 1920) * 98) 0 calc((100vw / 1920) * 139) calc((100vw / 1920) * 98);
+        margin: calc((100vw / 1440) * 98) 0 calc((100vw / 1440) * 139) calc((100vw / 1440) * 98);
 
         @media (max-width:480px) {
             text-align: center;
@@ -152,17 +158,16 @@
 
 
 .block3 {
-    background: url('../img/bg2.jpg')center 69%/cover no-repeat;
+    background: url('../img/bg2.png')center 69%/cover no-repeat;
     font-family: 'Inter', sans-serif;
     position: relative;
-    border-radius: calc((100vw / 1920) * 50);
+    border-radius: calc((100vw / 1440) * 50);
 
-    
 
     &__container {
         margin: 0 auto;
-        padding-left: calc((100vw / 1920) * 88);
-        padding-right: calc((100vw / 1920) * 121);
+        padding-left: calc((100vw / 1440) * 88);
+        padding-right: calc((100vw / 1440) * 121);
     }
 
     &__PSA {
@@ -171,67 +176,75 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         font-weight: 500;
-        font-size: calc((100vw / 1920) * 200);
-        line-height: calc((100vw / 1920) * 242);
+        font-size: calc((100vw / 1440) * 200);
+        line-height: calc((100vw / 1440) * 242);
         position: absolute;
-        top: -18%;
+        top: calc((100vw / 1440) * -120);
 
         @media (max-width:480px) {
             font-size: calc((100vw / 390) * 64);
             line-height: calc((100vw / 390) * 77);
-            top: -13%;
         }
     }
 
     &__row {
-        margin-top: calc((100vw / 1920) * 28);
+        margin-top: calc((100vw / 1440) * 28);
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
 
-    &__title {
-        margin-top: calc((100vw / 1920) * 28);
-        display: flex;
-        color: #0C3B45;
-        margin-bottom: calc((100vw / 1920) * 129);
-        font-weight: 500;
-        font-size: calc((100vw / 1920) * 75);
-        line-height: calc((100vw / 1920) * 91);
+    &__wrapper {
+        margin-bottom: calc((100vw / 1440) * 109);
+        max-width: calc((100vw / 1440) * 858);
 
         @media (max-width:480px) {
-            font-size: calc((100vw / 390) * 22);
-            line-height: calc((100vw / 390) * 27);
-            margin-bottom: calc((100vw / 390) * 50);
+            max-width: calc((100vw / 390) * 249);
+            margin-bottom: calc((100vw / 390) * 42);
+            width: 100%;
+        }
+    }
+
+    &__title {
+        margin-top: calc((100vw / 1440) * 28);
+        display: flex;
+        color: #0C3B45;
+        margin-bottom: calc((100vw / 1440) * 48);
+        font-weight: 500;
+        font-size: calc((100vw / 1440) * 58);
+        line-height: calc((100vw / 1440) * 70);
+
+        @media (max-width:480px) {
+            font-size: calc((100vw / 390) * 18);
+            line-height: calc((100vw / 390) * 22);
+            margin-bottom: calc((100vw / 390) * 20);
             margin-top: calc((100vw / 390) * 20);
         }
 
         img {
-            max-width: calc((100vw / 1920) * 80);
-            margin-right: calc((100vw / 1920) * 29);
+            max-width: calc((100vw / 1440) * 80);
+            margin-right: calc((100vw / 1440) * 29);
 
             @media (max-width:480px) {
                 max-width: calc((100vw / 390) * 25);
+                margin-right: calc((100vw / 390) * 5.5);
             }
         }
     }
 
     &__list-kadrov {
-        margin-bottom: calc((100vw / 1920) * 34);
-        padding: calc((100vw / 1920) * 15) calc((100vw / 1920) * 45);
-        max-width: calc((100vw / 1920) * 796);
-        font-size: calc((100vw / 1920) * 48);
+        padding: calc((100vw / 1440) * 15) calc((100vw / 1440) * 45);
+        font-size: calc((100vw / 1440) * 48);
         color: #0C3B45;
         background: rgba(255, 255, 255, 0.4);
-        box-shadow: calc((100vw / 1920) * 3) calc((100vw / 1920) * 3) calc((100vw / 1920) * 6) rgba(0, 0, 0, 0.25);
+        box-shadow: calc((100vw / 1440) * 3) calc((100vw / 1440) * 3) calc((100vw / 1440) * 6) rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(3px);
-        border-radius: calc((100vw / 1920) * 20);
-        line-height: calc((100vw / 1920) * 62.89);
+        border-radius: calc((100vw / 1440) * 20);
+        line-height: calc((100vw / 1440) * 62.89);
 
         @media (max-width:480px) {
-            max-width: calc((100vw / 390) * 241);
-            padding: calc((100vw / 390) * 15) calc((100vw / 390) * 13) calc((100vw / 390) * 13) calc((100vw / 390) * 15);
-            margin-bottom: calc((100vw / 390) * 20);
+            max-width: calc((100vw / 390) * 249);
+            padding: calc((100vw / 390) * 10) calc((100vw / 390) * 21) calc((100vw / 390) * 9) calc((100vw / 390) * 15);
             border-radius: calc((100vw / 390) * 5.5);
         }
 
@@ -241,43 +254,81 @@
 
         p {
             font-weight: 400;
-            max-width: 64%;
-
-            @media (max-width:480px) {
-                max-width: 73%;
-            }
         }
 
         @media (max-width:480px) {
-            font-size: calc((100vw / 390) * 16);
-            line-height: calc((100vw / 390) * 23);
+            font-size: calc((100vw / 390) * 14);
+            line-height: calc((100vw / 390) * 21.28);
         }
     }
+
+    &__absolut {
+        text-align: center;
+        align-self: center;
+        font-weight: calc((100vw / 1440) * 400);
+        padding: calc((100vw / 1440) * 30) calc((100vw / 1440) * 45);
+        font-size: calc((100vw / 1440) * 36);
+        line-height: calc((100vw / 1440) * 47);
+        color: #0C3B45;
+        max-width: calc((100vw / 1440) * 1108);
+        max-height: calc((100vw / 1440) * 577);
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: calc((100vw / 1440) * 3) calc((100vw / 1440) * 3) calc((100vw / 1440) * 6) rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(3px);
+        border-radius: calc((100vw / 1440) * 20);
+        position: absolute;
+        bottom: calc((100vw / 1440) * -505);
+
+        @media (max-width:480px) {
+            padding: calc((100vw / 390) * 10) calc((100vw / 390) * 15);
+            font-size: calc((100vw / 390) * 12);
+            line-height: calc((100vw / 390) * 16);
+            max-width: calc((100vw / 390) * 328);
+            max-height: calc((100vw / 390) * 212);
+            bottom: calc((100vw / 1440) * -685);
+        }
+
+        P {
+            &:nth-child(2) {
+                margin: calc((100vw / 1440) * 50) 0;
+
+                @media (max-width:480px) {
+                    margin: calc((100vw / 390) * 15) 0;
+                }
+            }
+        }
+    }
+
 }
 
 .block4 {
     position: relative;
-    background: url('../img/bg3.jpg')center/cover no-repeat;
-    margin-top: calc((100vw / 1920) * 124);
+    background: url('../img/bg3.png')center/cover no-repeat;
+    margin-top: calc((100vw / 1440) * 683);
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
-    border-radius: calc((100vw / 1920) * 50);
+    border-radius: calc((100vw / 1440) * 50);
+
+    @media (max-width:480px) {
+        margin-top: calc((100vw / 390) * 245);
+        border-radius: calc((100vw / 390) * 13.5);
+    }
 
     &__container {
         margin: 0 auto;
-        padding-left: calc((100vw / 1920) * 88);
-        padding-right: calc((100vw / 1920) * 121);
+        padding-left: calc((100vw / 1440) * 88);
+        padding-right: calc((100vw / 1440) * 121);
     }
 
     &__PSA {
         font-weight: 500;
-        font-size: calc((100vw / 1920) * 200);
-        line-height: calc((100vw / 1920) * 242);
+        font-size: calc((100vw / 1440) * 200);
+        line-height: calc((100vw / 1440) * 242);
         background: linear-gradient(180deg, #6BDAF2 0%, #D5F7FF 100%);
         -webkit-text-fill-color: transparent;
         background-clip: text;
         position: absolute;
-        top: -18%;
+        top: calc((100vw / 1440) * -120);
     }
 
     &__row {
@@ -288,71 +339,131 @@
 
     &__content {
         align-self: flex-end;
-        max-width: calc((100vw / 1920) * 796);
-        margin-right: calc((100vw / 1920) * 92);
+        max-width: calc((100vw / 1440) * 858);
+        width: 100%;
+
+        // @media (max-width:480px) {
+        //     max-width: calc((100vw / 390) * 237);
+        //     width: 100%;
+        //     margin: 0;
+        // }
     }
 
     &__title {
         align-self: center;
         display: flex;
         font-weight: 600;
-        font-size: calc((100vw / 1920) * 75);
-        line-height: calc((100vw / 1920) * 91);
-        margin-top: calc((100vw / 1920) * 34);
-        margin-bottom: calc((100vw / 1920) * 156);
+        font-size: calc((100vw / 1440) * 75);
+        line-height: calc((100vw / 1440) * 91);
+        margin-top: calc((100vw / 1440) * 34);
+        margin-bottom: calc((100vw / 1440) * 156);
+
+        @media (max-width:480px) {
+            font-size: calc((100vw / 390) * 22);
+            line-height: calc((100vw / 390) * 27);
+            margin-bottom: calc((100vw / 390) * 20);
+            margin-top: calc((100vw / 390) * 20);
+        }
 
         img {
-            max-width: calc((100vw / 1920) * 83);
-            margin-right: calc((100vw / 1920) * 25);
+            max-width: calc((100vw / 1440) * 83);
+            margin-right: calc((100vw / 1440) * 25);
+
+            @media (max-width:480px) {
+                max-width: calc((100vw / 390) * 25);
+                margin-right: calc((100vw / 390) * 5);
+            }
         }
     }
 
     &__text {
-        max-width: calc((100vw / 1920) * 766);
+        width: 100%;
+        max-width: calc((100vw / 1440) * 766);
         font-weight: 500;
-        font-size: calc((100vw / 1920) * 48);
-        line-height: calc((100vw / 1920) * 58);
+        font-size: calc((100vw / 1440) * 48);
+        line-height: calc((100vw / 1440) * 58);
         background: rgba(255, 255, 255, 0.3);
-        box-shadow: 0px calc((100vw / 1920) * 4) calc((100vw / 1920) * 4) rgba(0, 0, 0, 0.25);
+        box-shadow: 0px calc((100vw / 1440) * 4) calc((100vw / 1440) * 4) rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(3px);
-        border-radius: calc((100vw / 1920) * 20);
-        padding-top: calc((100vw / 1920) * 15);
-        padding-bottom: calc((100vw / 1920) * 15);
-        padding-left: calc((100vw / 1920) * 30);
-        padding-right: calc((100vw / 1920) * 30);
-        margin-bottom: calc((100vw / 1920) * 96);
+        border-radius: calc((100vw / 1440) * 20);
+        padding: calc((100vw / 1440) * 15) calc((100vw / 1440) * 30);
+        margin-bottom: calc((100vw / 1440) * 170);
+
+        @media (max-width:480px) {
+            margin-bottom: calc((100vw / 390) * 81);
+            padding: calc((100vw / 390) * 15) calc((100vw / 390) * 11) calc((100vw / 390) * 15) calc((100vw / 390) * 15);
+            font-size: calc((100vw / 390) * 16);
+            line-height: calc((100vw / 390) * 24.32);
+            max-width: calc((100vw / 390) * 237);
+        }
     }
 
     &__text400 {
         font-weight: 400;
     }
+
+    &__absolut {
+        text-align: center;
+        align-self: center;
+        font-weight: calc((100vw / 1440) * 400);
+        padding: calc((100vw / 1440) * 30) calc((100vw / 1440) * 45);
+        font-size: calc((100vw / 1440) * 32);
+        line-height: calc((100vw / 1440) * 47);
+        color: #0C3B45;
+        max-width: calc((100vw / 1440) * 1108);
+        max-height: calc((100vw / 1440) * 577);
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: calc((100vw / 1440) * 3) calc((100vw / 1440) * 3) calc((100vw / 1440) * 6) rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(3px);
+        border-radius: calc((100vw / 1440) * 20);
+        position: absolute;
+        bottom: calc((100vw / 1440) * -219);
+
+        @media (max-width:480px) {
+            max-width: calc((100vw / 390) * 284.5);
+            max-height: calc((100vw / 390) * 132);
+            font-size: calc((100vw / 390) * 12);
+            line-height: calc((100vw / 390) * 15.72);
+            padding: calc((100vw / 390) * 10) calc((100vw / 390) * 15);
+            bottom: calc((100vw / 1440) * -245);
+        }
+
+        p:first-child {
+            margin-bottom: calc((100vw / 1440) * 50);
+        }
+    }
 }
 
 
 .block5 {
-    margin-top: calc((100vw / 1920) * 116);
-    background: url('../img/bg4.jpg')center/cover no-repeat;
+    margin-top: calc((100vw / 1440) * 385);
+    background: url('../img/bg4.png')center/cover no-repeat;
     color: #0C3B45;
     font-family: 'Inter', sans-serif;
-    border-radius: calc((100vw / 1920) * 50);
+    border-radius: calc((100vw / 1440) * 50);
     position: relative;
+
+    @media (max-width:480px) {
+        margin-top: calc((100vw / 390) * 125);
+        border-radius: calc((100vw / 390) * 13.5);
+    }
 
 
     &__container {
         margin: 0 auto;
-        padding-left: calc((100vw / 1920) * 89);
-        padding-right: calc((100vw / 1920) * 100);
+        padding-left: calc((100vw / 1440) * 89);
+        padding-right: calc((100vw / 1440) * 100);
     }
 
     &__PSA {
         font-weight: 500;
-        font-size: calc((100vw / 1920) * 200);
-        line-height: calc((100vw / 1920) * 242);
+        font-size: calc((100vw / 1440) * 200);
+        line-height: calc((100vw / 1440) * 242);
         background: linear-gradient(180deg, #6BDAF2 0%, #D5F7FF 100%);
         -webkit-text-fill-color: transparent;
         background-clip: text;
         position: absolute;
-        top: -18%;
+        top: calc((100vw / 1440) * -120);
     }
 
     &__row {
@@ -362,56 +473,87 @@
     }
 
     &__title {
-        margin-top: calc((100vw / 1920) * 40);
+        margin-top: calc((100vw / 1440) * 40);
         display: flex;
         font-weight: 600;
-        font-size: calc((100vw / 1920) * 75);
-        line-height: calc((100vw / 1920) * 91);
-        margin-bottom: calc((100vw / 1920) * 312);
+        font-size: calc((100vw / 1440) * 75);
+        line-height: calc((100vw / 1440) * 91);
+        margin-bottom: calc((100vw / 1440) * 312);
+
+        @media (max-width:480px) {
+            margin-top: calc((100vw / 390) * 20);
+            font-size: calc((100vw / 390) * 22);
+            line-height: calc((100vw / 390) * 27);
+            margin-bottom: calc((100vw / 390) * 119);
+        }
 
         img {
-            max-width: calc((100vw / 1920) * 62.74);
-            margin-right: calc((100vw / 1920) * 16.26);
+            max-width: calc((100vw / 1440) * 62.74);
+            margin-right: calc((100vw / 1440) * 16.26);
+
+            @media (max-width:480px) {
+                max-width: calc((100vw / 390) * 17);
+            }
         }
     }
 
     &__text {
-        max-width: calc((100vw / 1920) * 813);
-        margin-bottom: calc((100vw / 1920) * 47);
+        max-width: calc((100vw / 1440) * 813);
+        margin-bottom: calc((100vw / 1440) * 47);
         font-weight: 400;
-        font-size: calc((100vw / 1920) * 48);
-        line-height: calc((100vw / 1920) * 58);
+        font-size: calc((100vw / 1440) * 48);
+        line-height: calc((100vw / 1440) * 58);
         background: rgba(255, 255, 255, 0.3);
-        box-shadow: calc((100vw / 1920) * 3) calc((100vw / 1920) * 3) calc((100vw / 1920) * 6) rgba(0, 0, 0, 0.25);
+        box-shadow: calc((100vw / 1440) * 3) calc((100vw / 1440) * 3) calc((100vw / 1440) * 6) rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(3px);
-        padding: calc((100vw / 1920) * 20) calc((100vw / 1920) * 40);
-        border-radius: calc((100vw / 1920) * 20);
+        padding: calc((100vw / 1440) * 20) calc((100vw / 1440) * 40);
+        border-radius: calc((100vw / 1440) * 20);
+
+        @media (max-width:480px) {
+            font-size: calc((100vw / 390) * 16);
+            line-height: calc((100vw / 390) * 19);
+            margin-bottom: calc((100vw / 390) * 20);
+            padding: calc((100vw / 390) * 15) calc((100vw / 390) * 11.5) calc((100vw / 390) * 15) calc((100vw / 390) * 15);
+        }
     }
 }
 
 
 .inputs {
     background: url('../img/bg-input.jpg')center/cover no-repeat;
-    padding-top: calc((100vw / 1920) * 100);
+    padding-top: calc((100vw / 1440) * 100);
     font-family: 'Inter', sans-serif;
-    padding-bottom: calc((100vw / 1920) * 100);
+    padding-bottom: calc((100vw / 1440) * 100);
 
     &__block1 {
-        max-width: calc((100vw / 1920) * 1289);
+        max-width: calc((100vw / 1440) * 1240);
         margin: 0 auto;
     }
 
     &__container {
-        max-width: calc((100vw / 1920) * 1240);
+        max-width: calc((100vw / 1440) * 1240);
+        margin: 0 auto;
+
+        @media (max-width:480px) {
+            max-width: calc((100vw / 390) * 350);
+        }
     }
 
     &__title {
         font-weight: 500;
-        font-size: calc((100vw / 1920) * 64);
-        line-height: calc((100vw / 1920) * 77);
+        font-size: calc((100vw / 1440) * 64);
+        line-height: calc((100vw / 1440) * 77);
         color: #0C3B45;
-        letter-spacing: calc((100vw / 1920) * -3.2);
-        margin-bottom: calc((100vw / 1920) * 50);
+        letter-spacing: -0.02em;
+        margin-bottom: calc((100vw / 1440) * 50);
+
+        @media (max-width:480px) {
+            text-align: center;
+            font-size: calc((100vw / 390) * 24);
+            line-height: calc((100vw / 390) * 29);
+            letter-spacing: -0.02em;
+            padding: 0 calc((100vw / 390) * 15);
+        }
     }
 
     &__name,
@@ -419,19 +561,25 @@
     &__mail {
         position: relative;
         font-weight: 400;
-        font-size: calc((100vw / 1920) * 36);
-        line-height: calc((100vw / 1920) * 44);
+        font-size: calc((100vw / 1440) * 36);
+        line-height: calc((100vw / 1440) * 44);
         width: 100%;
         background: rgba(0, 0, 0, 0.05);
-        box-shadow: inset calc((100vw / 1920) * 5) calc((100vw / 1920) * 5) calc((100vw / 1920) * 5) rgba(12, 59, 69, 0.25);
+        box-shadow: inset calc((100vw / 1440) * 5) calc((100vw / 1440) * 5) calc((100vw / 1440) * 5) rgba(12, 59, 69, 0.25);
         backdrop-filter: blur(4px);
-        border-radius: calc((100vw / 1920) * 10);
-        height: calc((100vw / 1920) * 100);
-        padding: calc((100vw / 1920) * 28) calc((100vw / 1920) * 30);
-        margin-bottom: calc((100vw / 1920) * 20);
+        border-radius: calc((100vw / 1440) * 10);
+        height: calc((100vw / 1440) * 100);
+        padding: calc((100vw / 1440) * 28) calc((100vw / 1440) * 30);
+        margin-bottom: calc((100vw / 1440) * 20);
+        color: rgba(12, 59, 69, 0.4);
 
-        &:last-child {
-            margin-bottom: calc((100vw / 1920) * 50);
+        @media (max-width:480px) {
+            font-size: calc((100vw / 390) * 18);
+            line-height: calc((100vw / 390) * 22);
+            padding: calc((100vw / 390) * 14);
+            margin-bottom: calc((100vw / 390) * 15);
+            height: calc((100vw / 390) * 50);
+            border-radius: calc((100vw / 390) * 5);
         }
     }
 
@@ -440,12 +588,26 @@
         color: #FFFFFF;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        font-size: calc((100vw / 1920) * 48);
-        line-height: calc((100vw / 1920) * 59);
-        padding: calc((100vw / 1920) * 20) calc((100vw / 1920) * 40);
+        font-size: calc((100vw / 1440) * 48);
+        line-height: calc((100vw / 1440) * 59);
+        padding: calc((100vw / 1440) * 20) calc((100vw / 1440) * 40);
         background: #30B9D8;
-        border-radius: calc((100vw / 1920) * 20);
+        border-radius: calc((100vw / 1440) * 20);
         margin: 0 auto;
+        box-shadow: 4px 4px 7px rgba(12, 59, 69, 0.25);
+
+        @media (max-width:480px) {
+            font-size: calc((100vw / 390) * 18);
+            line-height: calc((100vw / 390) * 22);
+            padding: calc((100vw / 390) * 10) calc((100vw / 390) * 20);
+            margin-bottom: calc((100vw / 390) * 15);
+            border-radius: calc((100vw / 390) * 10);
+        }
+
+        &:hover {
+            font-weight: 600;
+            box-shadow: 0px 0px 20px #70E5FF, 4px 4px 7px rgba(12, 59, 69, 0.25);
+        }
     }
 }
 
@@ -454,68 +616,113 @@
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
     background: #002027;
-    padding-top: calc((100vw / 1920) * 30);
-    padding-bottom: calc((100vw / 1920) * 45);
 
     &__container {
-        max-width: calc((100vw / 1920) * 600);
+        max-width: calc((100vw / 1440) * 600);
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media (max-width:480px) {
+            max-width: calc((100vw / 390) * 300);
+        }
     }
 
     &__title {
         font-weight: 600;
-        font-size: calc((100vw / 1920) * 38);
-        line-height: calc((100vw / 1920) * 46);
-        margin-bottom: calc((100vw / 1920) * 28);
+        font-size: calc((100vw / 1440) * 38);
+        line-height: calc((100vw / 1440) * 46);
+        margin-bottom: calc((100vw / 1440) * 28);
+        margin-top: calc((100vw / 1440) * 30);
+
+        @media (max-width:480px) {
+            font-size: calc((100vw / 390) * 16);
+            line-height: calc((100vw / 390) * 19);
+            margin-top: calc((100vw / 390) * 20);
+            margin-bottom: calc((100vw / 390) * 20);
+        }
     }
 
     &__contacts {
         font-weight: 400;
-        font-size: calc((100vw / 1920) * 36);
-        line-height: calc((100vw / 1920) * 44);
+        font-size: calc((100vw / 1440) * 36);
+        line-height: calc((100vw / 1440) * 44);
         text-align: center;
-        margin-bottom: calc((100vw / 1920) * 20);
+        margin-bottom: calc((100vw / 1440) * 20);
+        
+
+        @media (max-width:480px) {
+            font-size: calc((100vw / 390) * 16);
+            line-height: calc((100vw / 390) * 19);
+            margin-bottom: calc((100vw / 390) * 15);
+        }
 
         a {
             display: block;
-            margin-top: calc((100vw / 1920) * 20);
-            color: #FFFFFF;
+            margin-top: calc((100vw / 1440) * 20);
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration:underline;
+
+            @media (max-width:480px) {
+                margin-top: calc((100vw / 390) * 15);
+            }
         }
     }
 
     &__email {
-        font-weight: 400;
-        font-size: calc((100vw / 1920) * 36);
-        line-height: calc((100vw / 1920) * 44);
+        font-size: calc((100vw / 1440) * 36);
+        line-height: calc((100vw / 1440) * 44);
+        color: rgba(255, 255, 255, 0.8);
+
+        @media (max-width:480px) {
+            font-size: calc((100vw / 390) * 16);
+            line-height: calc((100vw / 390) * 19);
+        }
     }
 
     &__icons {
-        margin-bottom: calc((100vw / 1920) * 25);
-        margin-top: calc((100vw / 1920) * 25);
+        margin-bottom: calc((100vw / 1440) * 25);
+        margin-top: calc((100vw / 1440) * 25);
+
+        @media (max-width:480px) {
+            margin-top: calc((100vw / 390) * 15);
+        }
 
         a {
             display: inline-block;
 
             &:last-child {
-                margin-left: calc((100vw / 1920) * 50);
+                margin-left: calc((100vw / 1440) * 50);
+
+                @media (max-width:480px) {
+                    margin-left: calc((100vw / 390) * 30);
+                }
             }
         }
 
         img {
-            max-width: calc((100vw / 1920) * 60);
+            max-width: calc((100vw / 1440) * 60);
+
+            @media (max-width:480px) {
+                max-width: calc((100vw / 390) * 25);
+            }
         }
     }
 
     &__privacy {
-        font-weight: 400;
-        font-size: calc((100vw / 1920) * 32);
-        line-height: calc((100vw / 1920) * 39);
+        margin-bottom: calc((100vw / 1440) * 45);
 
         a {
-            color: rgba(255, 255, 255, 0.7);
+            text-decoration:underline;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: calc((100vw / 1440) * 32);
+            line-height: calc((100vw / 1440) * 39);
+
+            @media (max-width:480px) {
+                font-size: calc((100vw / 390) * 12);
+                line-height: calc((100vw / 390) * 15);
+            }
         }
     }
 }
@@ -531,11 +738,11 @@
 
 
 
+
 .inputs1 {
     width: 774.38px;
-    max-height: 595px;
     font-family: 'Inter', sans-serif;
-    padding: 62.5px 0;
+    padding: 25px 30px 50px;
     background: url('../img/bg-input.jpg') center/cover no-repeat;
     border-radius: 31.25px;
     position: absolute;
@@ -545,7 +752,6 @@
 
     &__block1 {
         max-width: 774.38px;
-        max-height: 470.63px;
         margin: 0 auto;
         position: relative;
     }
@@ -556,7 +762,6 @@
     }
 
     &__title {
-        padding-left: 31.25px;
         font-weight: 312;
         font-size: 40px;
         line-height: 48.13px;
@@ -568,8 +773,7 @@
     &__name,
     &__tel,
     &__mail {
-        font-weight: 250;
-        font-size: 22.50px;
+        font-size: 22px;
         line-height: 27.50px;
         width: 100%;
         background: rgba(0, 0, 0, 0.05);
@@ -586,6 +790,7 @@
     }
 
     &__btn {
+        font-weight: 500;
         display: block;
         color: #FFFFFF;
         font-family: 'Montserrat', sans-serif;
@@ -596,94 +801,91 @@
         background: #30B9D8;
         border-radius: 12.50px;
         margin: 0 auto;
+
+        &:hover {
+            box-shadow: 0px 0px 20px #70E5FF, 4px 4px 7px rgba(12, 59, 69, 0.25);
+            font-weight: 600;
+        }
     }
 
     &__x {
         width: 23.48px;
         height: 23.48px;
-        position: absolute;
-        top: 4%;
-        right: 2.5%;
+        position: relative;
+        margin-left: auto;
 
-        &::before {
+        &::before,
+        &::after {
             content: '';
             display: block;
-            width: 23.48px;
-            height: 1.25px;
+            width: 36px;
+            height: 2px;
             transform: rotate(45deg);
             background: #000;
             position: relative;
-            top: 11px;
+            top: 12px;
             left: 0;
         }
 
         &::after {
-            content: '';
-            display: block;
-            width: 23.48px;
-            height: 1.25px;
-            transform: rotate(-45deg);
-            background: #000;
-            position: relative;
             top: 10px;
-            left: 0;
+            transform: rotate(-45deg);
         }
     }
 }
 
 
 
-@media (max-width:1199px) {
+@media (max-width:991.98px) {
     .inputs1 {
-        width: calc((100vw / 1920) * 1239);
+        width: calc((100vw / 1440) * 1239);
         font-family: 'Inter', sans-serif;
-        padding-top: calc((100vw / 1920) * 100);
-        padding-bottom: calc((100vw / 1920) * 100);
+        padding-top: calc((100vw / 1440) * 25);
+        padding-bottom: calc((100vw / 1440) * 50);
         background: url('../img/bg-input.jpg') center/cover no-repeat;
-        border-radius: calc((100vw / 1920) * 50);
+        border-radius: calc((100vw / 1440) * 50);
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
 
         &__block1 {
-            max-width: calc((100vw / 1920) * 1239);
+            max-width: calc((100vw / 1440) * 1239);
             margin: 0 auto;
             position: relative;
         }
 
         &__container {
-            max-width: calc((100vw / 1920) * 1125);
+            max-width: calc((100vw / 1440) * 1125);
             margin: 0 auto;
         }
 
         &__title {
-            padding-left: calc((100vw / 1920) * 50);
             font-weight: 500;
-            font-size: calc((100vw / 1920) * 64);
-            line-height: calc((100vw / 1920) * 77);
+            font-size: calc((100vw / 1440) * 64);
+            line-height: calc((100vw / 1440) * 77);
             color: #0C3B45;
-            letter-spacing: calc((100vw / 1920) * -3.2);
-            margin-bottom: calc((100vw / 1920) * 50);
+            letter-spacing: calc((100vw / 1440) * -3.2);
+            margin-bottom: calc((100vw / 1440) * 50);
         }
 
         &__name,
         &__tel,
         &__mail {
             font-weight: 400;
-            font-size: calc((100vw / 1920) * 36);
-            line-height: calc((100vw / 1920) * 44);
+            font-size: calc((100vw / 1440) * 36);
+            line-height: calc((100vw / 1440) * 44);
             width: 100%;
             background: rgba(0, 0, 0, 0.05);
-            box-shadow: inset calc((100vw / 1920) * 5) calc((100vw / 1920) * 5) calc((100vw / 1920) * 5) rgba(12, 59, 69, 0.25);
+            box-shadow: inset calc((100vw / 1440) * 5) calc((100vw / 1440) * 5) calc((100vw / 1440) * 5) rgba(12, 59, 69, 0.25);
             backdrop-filter: blur(4px);
-            border-radius: calc((100vw / 1920) * 10);
-            height: calc((100vw / 1920) * 100);
-            padding: calc((100vw / 1920) * 28) calc((100vw / 1920) * 30);
-            margin-bottom: calc((100vw / 1920) * 20);
+            border-radius: calc((100vw / 1440) * 10);
+            height: calc((100vw / 1440) * 100);
+            padding: calc((100vw / 1440) * 28) calc((100vw / 1440) * 30);
+            margin-bottom: calc((100vw / 1440) * 20);
 
             &:last-child {
-                margin-bottom: calc((100vw / 1920) * 50);
+                margin-bottom: calc((100vw / 1440) * 50);
             }
         }
 
@@ -692,43 +894,122 @@
             color: #FFFFFF;
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
-            font-size: calc((100vw / 1920) * 48);
-            line-height: calc((100vw / 1920) * 59);
-            padding: calc((100vw / 1920) * 20) calc((100vw / 1920) * 40);
+            font-size: calc((100vw / 1440) * 48);
+            line-height: calc((100vw / 1440) * 59);
+            padding: calc((100vw / 1440) * 20) calc((100vw / 1440) * 40);
             background: #30B9D8;
-            border-radius: calc((100vw / 1920) * 20);
+            border-radius: calc((100vw / 1440) * 20);
             margin: 0 auto;
         }
 
         &__x {
-            width: calc((100vw / 1920) * 37.56);
-            height: calc((100vw / 1920) * 37.56);
-            position: absolute;
-            top: 4%;
-            right: 2.5%;
 
-            &::before {
+            &::before,
+            &::after {
                 content: '';
                 display: block;
-                width: calc((100vw / 1920) * 37.56);
-                height: calc((100vw / 1920) * 2);
+                width: calc((100vw / 390) * 14);
+                height: calc((100vw / 390) * 1);
                 transform: rotate(45deg);
                 background: #000;
                 position: relative;
-                top: calc((100vw / 1920) * 11);
+                top: calc((100vw / 390) * 11);
                 left: 0;
             }
 
             &::after {
+                top: calc((100vw / 390) * 10);
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .inputs1 {
+        width: calc((100vw / 390) * 350);
+        font-family: 'Inter', sans-serif;
+        padding: calc((100vw / 390) * 6) calc((100vw / 390) * 15) calc((100vw / 390) * 30);
+        background: url('../img/bg-input.jpg') center/cover no-repeat;
+        border-radius: calc((100vw / 390) * 20);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &__block1 {
+            max-width: calc((100vw / 390) * 350);
+            margin: 0 auto;
+            position: relative;
+        }
+
+        &__container {
+            max-width: calc((100vw / 390) * 350);
+            margin: 0 auto;
+        }
+
+        &__title {
+            padding: 0 calc((100vw / 390) * 10);
+            text-align: center;
+            font-weight: 500;
+            font-size: calc((100vw / 390) * 22);
+            line-height: calc((100vw / 390) * 24);
+            color: #0C3B45;
+            letter-spacing: 0.02em;
+            margin-bottom: calc((100vw / 390) * 25);
+        }
+
+        &__name,
+        &__tel,
+        &__mail {
+            font-weight: 400;
+            font-size: calc((100vw / 390) * 14);
+            line-height: calc((100vw / 390) * 17);
+            width: 100%;
+            background: rgba(0, 0, 0, 0.05);
+            box-shadow: inset calc((100vw / 1440) * 5) calc((100vw / 390) * 5) calc((100vw / 390) * 5) rgba(12, 59, 69, 0.25);
+            backdrop-filter: blur(4px);
+            border-radius: calc((100vw / 390) * 5);
+            height: calc((100vw / 390) * 50);
+            padding: calc((100vw / 390) * 17) calc((100vw / 390) * 15);
+            margin-bottom: calc((100vw / 390) * 15);
+
+            // &:last-child {
+            //     margin-bottom: calc((100vw / 390) * 30);
+            // }
+        }
+
+        &__btn {
+            display: block;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: calc((100vw / 390) * 18);
+            line-height: calc((100vw / 390) * 22);
+            padding: calc((100vw / 390) * 10) calc((100vw / 390) * 20);
+            background: #30B9D8;
+            border-radius: calc((100vw / 390) * 10);
+            margin: 0 auto;
+        }
+
+        &__x {
+
+            &::before,
+            &::after {
                 content: '';
                 display: block;
-                width: calc((100vw / 1920) * 37.56);
-                height: calc((100vw / 1920) * 2);
-                transform: rotate(-45deg);
+                width: calc((100vw / 390) * 18);
+                height: calc((100vw / 390) * 1);
+                transform: rotate(45deg);
                 background: #000;
                 position: relative;
-                top: calc((100vw / 1920) * 10);
+                top: calc((100vw / 390) * 11);
                 left: 0;
+            }
+
+            &::after {
+                top: calc((100vw / 390) * 10);
+                transform: rotate(-45deg);
             }
         }
     }
